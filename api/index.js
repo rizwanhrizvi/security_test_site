@@ -61,7 +61,7 @@ export default async function handler(req, res) {
       },
       bodyPreview: html,
     });
-    await new Promise(resolve => setTimeout(resolve, 100000)); // sleep 5 seconds
+    
     res.status(200).send(html);
   } catch (err) {
     console.error("Error reading HTML:", err);
